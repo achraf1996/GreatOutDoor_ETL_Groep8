@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "GreatOutDoor_ETL_Groep8", "GreatOutDoor_ETL_Groep8\GreatOutDoor_ETL_Groep8.dtproj", "{720A76B6-DAEF-46D7-BC7D-F9B5B48B852F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{720A76B6-DAEF-46D7-BC7D-F9B5B48B852F}.Development|Default.ActiveCfg = Development
+		{720A76B6-DAEF-46D7-BC7D-F9B5B48B852F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {529B2189-299C-4345-81B1-5F1B2AEFFB00}
+	EndGlobalSection
+EndGlobal
