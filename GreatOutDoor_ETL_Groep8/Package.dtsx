@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="3/18/2021 8:22:54 AM"
@@ -11,9 +11,65 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{4A72170D-BA80-443C-9E5A-70B4352D6EED}">
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{9AAB3634-F410-4C3B-A621-C2A818BBAA4E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[127.0.0.1.aenc.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{221748E5-7696-4878-897C-2895F1162A5F}"
+      DTS:ObjectName="127.0.0.1.aenc.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=127.0.0.1;user id=root;persistsecurityinfo=True;database=aenc;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqPhRpedooEiqx4h9NMoHwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSexfpf90EHlFYLG9HPRIvqLaGeFF2sdG4l7IdeB9SQgAAAAAOgAAAAAIAACAAAAAEK9BZCwar6CGhrSgjbBFBES7SYEHj3JOCowO6w/fcEiAAAACc6bLXEwV64LrcCWNZgFkCB4+51YTa84viAn6PrM4hM0AAAACAHDm+A1Rvh1urdu0X2pM73UQDFMI1/41gSeycYhKkOYsvJKjx07VW0eR49tOKM1CyZVplMU/GTp+IkHYJleVT</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[A_C_HMR database]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A9153E9A-E59E-4B17-BDE8-DA0DCAD8B431}"
+      DTS:ObjectName="A_C_HMR database">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=C:\Users\ach23769\source\repos\GreatOutDoor_ETL_Groep8\GreatOutDoor_ETL_Groep8\A_C_HMR database.accdb;Provider=Microsoft.Jet.OLEDB.4.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[C6963617.GreatOutdoor2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9C8E967A-9BF8-451B-BC25-F98265596E50}"
+      DTS:ObjectName="C6963617.GreatOutdoor2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=C6963617;Initial Catalog=GreatOutdoor2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{00186194-7925-4AC7-A38A-F0949EA5D7DA}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ach23769\source\repos\GreatOutDoor_ETL_Groep8\GreatOutDoor_ETL_Groep8\GO TRAINING.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
