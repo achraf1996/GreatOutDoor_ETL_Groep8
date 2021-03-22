@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{3BCAC303-D564-4BFC-A0F1-9D51384DD1A3}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{3CEE7C4E-1F6D-4B2A-B87B-E985D6DC91F6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqPhRpedooEiqx4h9NMoHwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACkzJlEkDz2Mt2rFH0cump75A7PtQC+7vS2UTsAtPpqtQAAAAAOgAAAAAIAACAAAAAXOITi4EBmvyhVaRaro71V8rmytzMdYL0W/KfWeS34jSAAAAA9BWoex8w6xgBX9iD5DVWQgow1TAOKgVv0+8VO0FuTp0AAAAB/4MWO0+XCQ0TZrfhPQSAgBrEuj8a3Oq0/3dPQV5gnQMGhByaXsgHA+H9SdS1p/qK4r2XHuGtRV7x9U1fvvfcs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqPhRpedooEiqx4h9NMoHwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSqTvCSOjj2KxiGmt1HXbUWgYMwGBjUJwDnvvtgaF3nQAAAAAOgAAAAAIAACAAAABsofgqg0LHNZVT19wmK/0jV760GJglIo9zVmWDQMsMbCAAAADVV0n9usAvBBSw0SQOp3Ov1ZvOEDxM98mJheIBVA2DU0AAAABhrUO7DTr79OKm/c57wQa5OnMhcIXTzGXwh6RcSLeEAbJEILuPVrePbqr72tFIcxYgTzXY6vbwMeKaxMyKYXf2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqPhRpedooEiqx4h9NMoHwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABkE/2h8BM1nFqlySyC14qlenjwntmi7lqktxId15MKVwAAAAAOgAAAAAIAACAAAAAT+dClAlSWsbE1JEiSyy/iD7XGpDqolYarTclKda/QiSAAAABWf1C8QDRWHCD+bcguYwTtQWS94ADy+8Aw64PFB+E85EAAAAB9z9uMVyde9ZZTaJaF/YP7TO1gAchHs9v8FVJ/4ptGHRQt5X7UF2RmBCdqgyHkhf0cUg7Rg5Mv31/WD2tucXAo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqPhRpedooEiqx4h9NMoHwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABJm49oohNQLywGcvoVBkTE98oTmpoMUke9+0YPe3ujOQAAAAAOgAAAAAIAACAAAABMp4NZnXI2Et5nVwTIAjmyzlXuHumaTyjtcy1wa1bkMiAAAADbbe1nhureaoi8PxLZw1SN3myL7cbPukY9tH/LLe3hbkAAAADnItx5e2RSZJhRzsZoXYVlvSq0ZOF2qf00fFGshRs3A5dmyNCk06/LioUL75LCTx1BwFhpikIbaABlFOyLEpsn</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2370,7 +2370,7 @@
                     <inputColumn
                       refId="Package\Data Flow Task - Sales Staff\Data Conversion.Inputs[Data Conversion Input].Columns[lname]"
                       cachedDataType="wstr"
-                      cachedLength="55"
+                      cachedLength="56"
                       cachedName="lname"
                       lineageId="Package\Data Flow Task - Sales Staff\Derived Column.Outputs[Derived Column Output].Columns[lname]" />
                     <inputColumn
@@ -2476,7 +2476,7 @@
                     <inputColumn
                       refId="Package\Data Flow Task - Sales Staff\Data Conversion 1.Inputs[Data Conversion Input].Columns[lname1]"
                       cachedDataType="wstr"
-                      cachedLength="510"
+                      cachedLength="511"
                       cachedName="lname1"
                       lineageId="Package\Data Flow Task - Sales Staff\Derived Column 1.Outputs[Derived Column Output].Columns[lname1]" />
                     <inputColumn
@@ -2632,7 +2632,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="55"
+                      length="56"
                       lineageId="Package\Data Flow Task - Sales Staff\Derived Column.Outputs[Derived Column Output].Columns[lname]"
                       name="lname"
                       truncationRowDisposition="FailComponent">
@@ -2641,13 +2641,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task - Sales Staff\OLE DB Source.Outputs[OLE DB Source Output].Columns[FIRST_NAME]} + #{Package\Data Flow Task - Sales Staff\OLE DB Source.Outputs[OLE DB Source Output].Columns[LAST_NAME]}</property>
+                          name="Expression">#{Package\Data Flow Task - Sales Staff\OLE DB Source.Outputs[OLE DB Source Output].Columns[FIRST_NAME]} + " " + #{Package\Data Flow Task - Sales Staff\OLE DB Source.Outputs[OLE DB Source Output].Columns[LAST_NAME]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">FIRST_NAME + LAST_NAME</property>
+                          name="FriendlyExpression">FIRST_NAME + " " + LAST_NAME</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2743,7 +2743,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="510"
+                      length="511"
                       lineageId="Package\Data Flow Task - Sales Staff\Derived Column 1.Outputs[Derived Column Output].Columns[lname1]"
                       name="lname1"
                       truncationRowDisposition="FailComponent">
@@ -2752,13 +2752,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task - Sales Staff\ADO NET Source.Outputs[ADO NET Source Output].Columns[emp_fname]} + #{Package\Data Flow Task - Sales Staff\ADO NET Source.Outputs[ADO NET Source Output].Columns[emp_lname]}</property>
+                          name="Expression">#{Package\Data Flow Task - Sales Staff\ADO NET Source.Outputs[ADO NET Source Output].Columns[emp_fname]} + " " + #{Package\Data Flow Task - Sales Staff\ADO NET Source.Outputs[ADO NET Source Output].Columns[emp_lname]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">emp_fname + emp_lname</property>
+                          name="FriendlyExpression">emp_fname + " " + emp_lname</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -4216,7 +4216,7 @@
         <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Data Flow Task - Sales Staff\Derived Column"
-          TopLeft="527.794871794872,290.666666666666" />
+          TopLeft="527.794871794872,291.435897435897" />
         <NodeLayout
           Size="158.666666666667,42.6666666666667"
           Id="Package\Data Flow Task - Sales Staff\Data Conversion"
@@ -4227,14 +4227,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48.4615384615383"
+              EndConnector="0,49.230769230769"
               Start="0,0"
-              End="0,40.9615384615383">
+              End="0,41.730769230769">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.9615384615383" />
+                    End="0,41.730769230769" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4245,18 +4245,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Sales Staff.Paths[Derived Column Output]"
-          TopLeft="604.487179487179,333.333333333333">
+          TopLeft="604.487179487179,334.102564102564">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.1282051282053"
+              EndConnector="0,44.3589743589746"
               Start="0,0"
-              End="0,37.6282051282053">
+              End="0,36.8589743589746">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.6282051282053" />
+                    End="0,36.8589743589746" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
