@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{9757E851-58E3-4526-A4A1-62E430150983}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{EC6D2407-A367-4DEE-8611-35458D46A6A4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9752,7 +9752,7 @@ where [refTable].[orginalId] = ?</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{32CCBECD-7FD4-4E76-8AD8-5E45CBADC503}"
-          SQLTask:SqlStatementSource="&#xA;INSERT INTO [dbo].[DIM_ORDER_METHOD]&#xA;           ([method])&#xA;     VALUES&#xA;           ('dummyOrderMethod')&#xA;INSERT INTO [dbo].[DIM_LOCATION]&#xA;           ([countryName]&#xA;           ,[regionName])&#xA;     VALUES&#xA;           ('DummyCountry'&#xA;           ,'DummyRegion')&#xA;&#xA;INSERT INTO [dbo].[DIM_SALES_BRANCH]&#xA;           ([address]&#xA;           ,[city]&#xA;           ,[orginalId]&#xA;           ,[orginalSource])&#xA;     VALUES&#xA;           ('dummystreet'&#xA;           ,'dummycity'&#xA;           ,'0'&#xA;           ,'dummysource')&#xA;&#xA;GO&#xA;&#xA;&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set ORDER_METHOD_id = ormeth.id&#xA;from ( select id from DIM_ORDER_METHOD where &#xA;method = 'dummyOrderMethod') as ormeth&#xA;where ORDER_METHOD_id is null&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set LOCATION_id = loc.id&#xA;from ( select id from DIM_LOCATION where &#xA;regionName = 'DummyRegion') as loc&#xA;where LOCATION_id is null&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set SALES_BRANCH_id = slb.id&#xA;from ( select id from DIM_SALES_BRANCH where &#xA;address = 'dummystreet') as slb&#xA;where SALES_BRANCH_id is null" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="&#xA;INSERT INTO [dbo].[DIM_ORDER_METHOD]&#xA;           ([method])&#xA;     VALUES&#xA;           ('dummyOrderMethod')&#xA;INSERT INTO [dbo].[DIM_LOCATION]&#xA;           ([countryName]&#xA;           ,[regionName])&#xA;     VALUES&#xA;           ('DummyCountry'&#xA;           ,'DummyRegion')&#xA;&#xA;INSERT INTO [dbo].[DIM_SALES_BRANCH]&#xA;           ([address]&#xA;           ,[city]&#xA;           ,[orginalId]&#xA;           ,[orginalSource])&#xA;     VALUES&#xA;           ('dummystreet'&#xA;           ,'dummycity'&#xA;           ,'0'&#xA;           ,'dummysource')&#xA;&#xA;GO&#xA;&#xA;&#xA;update DIM_SALES_STAFF&#xA;set departmentName = 'dummyDepartment'&#xA;where departmentName is null&#xA;&#xA;&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set ORDER_METHOD_id = ormeth.id&#xA;from ( select id from DIM_ORDER_METHOD where &#xA;method = 'dummyOrderMethod') as ormeth&#xA;where ORDER_METHOD_id is null&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set LOCATION_id = loc.id&#xA;from ( select id from DIM_LOCATION where &#xA;regionName = 'DummyRegion') as loc&#xA;where LOCATION_id is null&#xA;&#xA;update dbo.FACT_TOTAL_SALES&#xA;set SALES_BRANCH_id = slb.id&#xA;from ( select id from DIM_SALES_BRANCH where &#xA;address = 'dummystreet') as slb&#xA;where SALES_BRANCH_id is null" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
