@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{EC6D2407-A367-4DEE-8611-35458D46A6A4}">
+  DTS:VersionBuild="66"
+  DTS:VersionGUID="{3B1C50CD-0B6E-492A-ACAA-0CF4E7B3AB05}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1305,13 +1305,15 @@ where [refTable].[method] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_PRODUCT]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_PRODUCT]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1463,13 +1465,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_PRODUCT]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_PRODUCT 
+where orginalSource = 'AenC'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_PRODUCT]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_PRODUCT 
+where orginalSource = 'AenC') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1621,13 +1625,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_RETAILER]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_RETAILER
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_RETAILER]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_RETAILER
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1779,13 +1785,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_RETAILER]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_RETAILER
+where orginalSource = 'AenC'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_RETAILER]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_RETAILER
+where orginalSource = 'AenC') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1937,13 +1945,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_SALES_BRANCH]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_SALES_BRANCH
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_SALES_BRANCH]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_SALES_BRANCH
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -2095,13 +2105,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_SALES_STAFF]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_SALES_STAFF
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_SALES_STAFF]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_SALES_STAFF
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -2253,13 +2265,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_SALES_STAFF]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_SALES_STAFF
+where orginalSource = 'AenC'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_SALES_STAFF]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_SALES_STAFF
+where orginalSource = 'AenC') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -3447,13 +3461,15 @@ join COUNTRY ct on rtsite.COUNTRY_CODE = ct.COUNTRY_CODE</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_PRODUCT]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_PRODUCT]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ? and [refTable].[orginalSource] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -8659,13 +8675,15 @@ or employee.emp_id = 299 or employee.emp_id = 148</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_PRODUCT]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_PRODUCT]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_PRODUCT 
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -8805,13 +8823,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_RETAILER]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_RETAILER
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_RETAILER]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_RETAILER
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -8963,13 +8983,15 @@ where [refTable].[orginalId] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_SALES_STAFF]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DIM_SALES_STAFF
+where orginalSource = 'GreatOutdoor2'</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_SALES_STAFF]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DIM_SALES_STAFF
+where orginalSource = 'GreatOutdoor2') [refTable]
 where [refTable].[orginalId] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -10695,7 +10717,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Product"
-          TopLeft="298,228" />
+          TopLeft="298,228.760233932438" />
         <NodeLayout
           Size="182.666666666667,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch"
@@ -10711,7 +10733,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="157.333333333334,42"
           Id="Package\Data Flow Task - Fact Total Sales\OLE DB Source"
-          TopLeft="284,46" />
+          TopLeft="284.694444434096,45.2397660675618" />
         <NodeLayout
           Size="162.666666666667,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Calander"
@@ -10862,37 +10884,37 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output]"
-          TopLeft="376,270">
+          TopLeft="376,270.760233932438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.5,43"
+              EndConnector="9,42.2397660675618"
               Start="0,0"
-              End="-11.5,35.5">
+              End="9,34.7397660675618">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.5" />
+                    End="0,17.1198830337809" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.5"
-                    Point2="0,21.5"
-                    Point3="-4,21.5" />
+                    Point1="0,17.1198830337809"
+                    Point2="0,21.1198830337809"
+                    Point3="4,21.1198830337809" />
                   <mssgle:LineSegment
-                    End="-7.5,21.5" />
+                    End="5,21.1198830337809" />
                   <mssgle:CubicBezierSegment
-                    Point1="-7.5,21.5"
-                    Point2="-11.5,21.5"
-                    Point3="-11.5,25.5" />
+                    Point1="5,21.1198830337809"
+                    Point2="9,21.1198830337809"
+                    Point3="9,25.1198830337809" />
                   <mssgle:LineSegment
-                    End="-11.5,35.5" />
+                    End="9,34.7397660675618" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-53.94138671875,26.5,96.3827734375,11.609375"
+              BoundingBox="-43.69138671875,26.1198830337809,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10902,26 +10924,26 @@ where [refTable].[orginalId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13,53"
+              EndConnector="13,53.7602339324381"
               Start="0,0"
-              End="13,45.5">
+              End="13,46.2602339324381">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,22.8801169662191" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="4,26.5" />
+                    Point1="0,22.8801169662191"
+                    Point2="0,26.8801169662191"
+                    Point3="4,26.8801169662191" />
                   <mssgle:LineSegment
-                    End="9,26.5" />
+                    End="9,26.8801169662191" />
                   <mssgle:CubicBezierSegment
-                    Point1="9,26.5"
-                    Point2="13,26.5"
-                    Point3="13,30.5" />
+                    Point1="9,26.8801169662191"
+                    Point2="13,26.8801169662191"
+                    Point3="13,30.8801169662191" />
                   <mssgle:LineSegment
-                    End="13,45.5" />
+                    End="13,46.2602339324381" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10954,18 +10976,18 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[OLE DB Source Output]"
-          TopLeft="362.75,88">
+          TopLeft="363.180555550382,87.2397660675618">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45"
+              EndConnector="0,45.7602339324382"
               Start="0,0"
-              End="0,37.5">
+              End="0,38.2602339324382">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="0,38.2602339324382" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11237,17 +11259,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_RETAILER]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11283,17 +11305,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_PRODUCT]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11306,17 +11328,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_SALES_BRANCH]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11396,17 +11418,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_SALES_STAFF]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11425,9 +11447,9 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="168,42"
           Id="Package\Data Flow Task - Fact_Campaign\Lookup Promotion"
-          TopLeft="406,383" />
+          TopLeft="408,383" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\Data Flow Task - Fact_Campaign\OLE DB Source"
           TopLeft="384,137" />
         <NodeLayout
@@ -11435,7 +11457,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact_Campaign\Derived Column"
           TopLeft="395,240" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\Data Flow Task - Fact_Campaign\OLE DB Destination"
           TopLeft="392,484" />
         <EdgeLayout
@@ -11469,20 +11491,18 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output1]"
-          TopLeft="490,425">
+          TopLeft="492,425">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.5,59"
+              EndConnector="-11.3333333333333,59"
               Start="0,0"
-              End="-9.5,51.5">
+              End="-11.3333333333333,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -11493,20 +11513,20 @@ where [refTable].[orginalId] = ?</property>
                     Point2="0,29.5"
                     Point3="-4,29.5" />
                   <mssgle:LineSegment
-                    End="-5.5,29.5" />
+                    End="-7.33333333333326,29.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-5.5,29.5"
-                    Point2="-9.5,29.5"
-                    Point3="-9.5,33.5" />
+                    Point1="-7.33333333333326,29.5"
+                    Point2="-11.3333333333333,29.5"
+                    Point3="-11.3333333333333,33.5" />
                   <mssgle:LineSegment
-                    End="-9.5,51.5" />
+                    End="-11.3333333333333,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-52.94138671875,34.5,96.3827734375,11.609375"
+              BoundingBox="-53.8580533854166,34.5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11516,9 +11536,9 @@ where [refTable].[orginalId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10,35"
+              EndConnector="11.9999999999999,35"
               Start="0,0"
-              End="10,27.5">
+              End="11.9999999999999,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -11529,20 +11549,20 @@ where [refTable].[orginalId] = ?</property>
                     Point2="0,17.5"
                     Point3="4,17.5" />
                   <mssgle:LineSegment
-                    End="6,17.5" />
+                    End="7.99999999999994,17.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="6,17.5"
-                    Point2="10,17.5"
-                    Point3="10,21.5" />
+                    Point1="7.99999999999994,17.5"
+                    Point2="11.9999999999999,17.5"
+                    Point3="11.9999999999999,21.5" />
                   <mssgle:LineSegment
-                    End="10,27.5" />
+                    End="11.9999999999999,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-43.19138671875,22.5,96.3827734375,11.609375"
+              BoundingBox="-42.19138671875,22.5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11565,9 +11585,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11600,17 +11618,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_PRODUCT]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12069,7 +12087,7 @@ where [refTable].[orginalId] = ?</property>
     design-time-name="Package\Data Flow Task - Retailer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Data Flow Task - Retailer\Derived Column"
@@ -12079,11 +12097,11 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Retailer\OLE DB Destination 1"
           TopLeft="602,382" />
         <NodeLayout
-          Size="167,42"
+          Size="166.666666666667,42"
           Id="Package\Data Flow Task - Retailer\Derived Column 1"
           TopLeft="591,242" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\Data Flow Task - Retailer\OLE DB Source"
           TopLeft="247,147" />
         <NodeLayout
@@ -12091,7 +12109,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Retailer\ADO NET Source"
           TopLeft="589,131" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\Data Flow Task - Retailer\OLE DB Destination"
           TopLeft="244,379" />
         <EdgeLayout
@@ -12125,9 +12143,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12161,9 +12177,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12185,9 +12199,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12209,9 +12221,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12533,7 +12543,7 @@ where [refTable].[orginalId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\Data Flow Task - SALES_TARGET\Lookup Sales Staff"
           TopLeft="282,507" />
         <NodeLayout
@@ -12541,11 +12551,11 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - SALES_TARGET\Lookup Retailer"
           TopLeft="297,397" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\Data Flow Task - SALES_TARGET\OLE DB Destination"
           TopLeft="285,604" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\Data Flow Task - SALES_TARGET\OLE DB Source"
           TopLeft="264,194" />
         <NodeLayout
@@ -12583,9 +12593,7 @@ where [refTable].[orginalId] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12682,17 +12690,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_RETAILER]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12705,17 +12713,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_PRODUCT]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12728,17 +12736,17 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_SALES_STAFF]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12777,7 +12785,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_PRODUCT]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -12800,7 +12808,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_RETAILER]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -12823,7 +12831,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_SALES_STAFF]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
