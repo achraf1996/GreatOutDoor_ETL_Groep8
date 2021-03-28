@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{3B1C50CD-0B6E-492A-ACAA-0CF4E7B3AB05}">
+  DTS:VersionBuild="69"
+  DTS:VersionGUID="{037285E4-964D-421B-8A3F-389AA7444BA5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -846,7 +846,7 @@ where [refTable].[date] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1004,7 +1004,7 @@ where [refTable].[regionName] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1163,7 +1163,7 @@ where [refTable].[method] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1324,7 +1324,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1484,7 +1484,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1644,7 +1644,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1804,7 +1804,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1964,7 +1964,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -2124,7 +2124,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -2284,7 +2284,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -3480,7 +3480,7 @@ where [refTable].[orginalId] = ? and [refTable].[orginalSource] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -3655,7 +3655,7 @@ where [refTable].[original_id] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -8694,7 +8694,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -8771,7 +8771,7 @@ where [refTable].[orginalId] = ?</property>
                 <output
                   refId="Package\Data Flow Task - SALES_TARGET\Lookup Product.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="RedirectRow"
+                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Data Flow Task - SALES_TARGET\Lookup Product.Inputs[Lookup Input]">
@@ -8842,7 +8842,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -9002,7 +9002,7 @@ where [refTable].[orginalId] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -10027,7 +10027,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="206,42"
           Id="Package\Fill in the total by quantitty"
-          TopLeft="155.535714352237,1866.90058694788" />
+          TopLeft="156.230158786334,1867.66082088032" />
         <NodeLayout
           Size="205.333333333334,42"
           Id="Package\Fill in total by Order Detail"
@@ -10384,18 +10384,18 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 20]"
-          TopLeft="257.174603241126,1908.90058694788">
+          TopLeft="257.605158791508,1909.66082088032">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.4444444444443"
+              EndConnector="0,51.6842105120015"
               Start="0,0"
-              End="0,44.9444444444443">
+              End="0,44.1842105120015">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.9444444444443" />
+                    End="0,44.1842105120015" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10656,18 +10656,18 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="256.33730035293,1773.14056324795">
+          TopLeft="256.684522569978,1773.14056324795">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,93.7600236999335"
+              EndConnector="0,94.5202576323718"
               Start="0,0"
-              End="0,86.2600236999335">
+              End="0,87.0202576323718">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,86.2600236999335" />
+                    End="0,87.0202576323718" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10713,7 +10713,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="160,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Location"
-          TopLeft="309,828" />
+          TopLeft="308.218750011642,809.184210172155" />
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Product"
@@ -10745,56 +10745,56 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="161.333333333334,42"
           Id="Package\Data Flow Task - Fact Total Sales\Data Conversion"
-          TopLeft="309,645" />
+          TopLeft="308.305555565904,645.760233932438" />
         <NodeLayout
           Size="168,42"
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf"
           TopLeft="298,556" />
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output5]"
-          TopLeft="391.75,784">
+          TopLeft="391.276041672487,784">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44"
+              EndConnector="0,25.1842101721551"
               Start="0,0"
-              End="0,36.5">
+              End="0,17.6842101721551">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5" />
+                    End="0,17.6842101721551" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,12.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,3.03741758607754,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output4]"
-          TopLeft="385.75,598">
+          TopLeft="385.486111116285,598">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47"
+              EndConnector="0,47.760233932438"
               Start="0,0"
-              End="0,39.5">
+              End="0,40.260233932438">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.5" />
+                    End="0,40.260233932438" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,14.325429466219,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10954,18 +10954,18 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[Data Conversion Output]"
-          TopLeft="392,687">
+          TopLeft="391.652777782952,687.760233932438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55"
+              EndConnector="0,54.239766067562"
               Start="0,0"
-              End="0,47.5">
+              End="0,46.739766067562">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.5" />
+                    End="0,46.739766067562" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10998,37 +10998,37 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output6]"
-          TopLeft="389,870">
+          TopLeft="388.218750011642,851.184210172155">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.5,36"
+              EndConnector="15.4479166550252,54.8157898278449"
               Start="0,0"
-              End="14.5,28.5">
+              End="15.4479166550252,47.3157898278449">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14" />
+                    End="0,23.4078949139225" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14"
-                    Point2="0,18"
-                    Point3="4,18" />
+                    Point1="0,23.4078949139225"
+                    Point2="0,27.4078949139225"
+                    Point3="4,27.4078949139225" />
                   <mssgle:LineSegment
-                    End="10.5,18" />
+                    End="11.4479166550252,27.4078949139225" />
                   <mssgle:CubicBezierSegment
-                    Point1="10.5,18"
-                    Point2="14.5,18"
-                    Point3="14.5,22" />
+                    Point1="11.4479166550252,27.4078949139225"
+                    Point2="15.4479166550252,27.4078949139225"
+                    Point3="15.4479166550252,31.4078949139225" />
                   <mssgle:LineSegment
-                    End="14.5,28.5" />
+                    End="15.4479166550252,47.3157898278449" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-40.94138671875,23,96.3827734375,11.609375"
+              BoundingBox="-40.4674283912374,32.4078949139225,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11282,7 +11282,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11395,7 +11395,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11641,7 +11641,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12264,7 +12264,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
           Id="Package\Data Flow Task - SALES Branch\OLE DB Destination"
-          TopLeft="228,298" />
+          TopLeft="228,297.2" />
         <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Data Flow Task - SALES Branch\Derived Column"
@@ -12279,9 +12279,9 @@ where [refTable].[orginalId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="64.2777777984738,44.6666666666663"
+              EndConnector="64.2777777984737,44.6666666666663"
               Start="0,0"
-              End="64.2777777984738,37.1666666666663">
+              End="64.2777777984737,37.1666666666663">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -12292,13 +12292,13 @@ where [refTable].[orginalId] = ?</property>
                     Point2="0,22.3333333333332"
                     Point3="4,22.3333333333332" />
                   <mssgle:LineSegment
-                    End="60.2777777984738,22.3333333333332" />
+                    End="60.2777777984737,22.3333333333332" />
                   <mssgle:CubicBezierSegment
-                    Point1="60.2777777984738,22.3333333333332"
-                    Point2="64.2777777984738,22.3333333333332"
-                    Point3="64.2777777984738,26.3333333333332" />
+                    Point1="60.2777777984737,22.3333333333332"
+                    Point2="64.2777777984737,22.3333333333332"
+                    Point3="64.2777777984737,26.3333333333332" />
                   <mssgle:LineSegment
-                    End="64.2777777984738,37.1666666666663" />
+                    End="64.2777777984737,37.1666666666663" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12313,26 +12313,26 @@ where [refTable].[orginalId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-51.2777777984738,54.0000000000003"
+              EndConnector="-51.2777777984736,53.2000000000003"
               Start="0,0"
-              End="-51.2777777984738,46.5000000000003">
+              End="-51.2777777984736,45.7000000000003">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.0000000000002" />
+                    End="0,22.6000000000001" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23.0000000000002"
-                    Point2="0,27.0000000000002"
-                    Point3="-4,27.0000000000002" />
+                    Point1="0,22.6000000000001"
+                    Point2="0,26.6000000000001"
+                    Point3="-4,26.6000000000001" />
                   <mssgle:LineSegment
-                    End="-47.2777777984738,27.0000000000002" />
+                    End="-47.2777777984736,26.6000000000001" />
                   <mssgle:CubicBezierSegment
-                    Point1="-47.2777777984738,27.0000000000002"
-                    Point2="-51.2777777984738,27.0000000000002"
-                    Point3="-51.2777777984738,31.0000000000002" />
+                    Point1="-47.2777777984736,26.6000000000001"
+                    Point2="-51.2777777984736,26.6000000000001"
+                    Point3="-51.2777777984736,30.6000000000001" />
                   <mssgle:LineSegment
-                    End="-51.2777777984738,46.5000000000003" />
+                    End="-51.2777777984736,45.7000000000003" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12549,7 +12549,7 @@ where [refTable].[orginalId] = ?</property>
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task - SALES_TARGET\Lookup Retailer"
-          TopLeft="297,397" />
+          TopLeft="298,397" />
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\Data Flow Task - SALES_TARGET\OLE DB Destination"
@@ -12622,42 +12622,54 @@ where [refTable].[orginalId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output1]"
-          TopLeft="371.25,439">
+          TopLeft="376,439">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68"
+              EndConnector="-8.66666666666663,67.9999999999999"
               Start="0,0"
-              End="0,60.5">
+              End="-8.66666666666663,60.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5" />
+                    End="0,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="-4,34" />
+                  <mssgle:LineSegment
+                    End="-4.66666666666663,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.66666666666663,34"
+                    Point2="-8.66666666666663,34"
+                    Point3="-8.66666666666663,38" />
+                  <mssgle:LineSegment
+                    End="-8.66666666666663,60.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,24.4453125,96.3827734375,11.609375"
+              BoundingBox="-52.5247200520833,39,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output]"
-          TopLeft="373,344">
+          TopLeft="373.5,344">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="0,53.0000000000001"
               Start="0,0"
-              End="0,45.5">
+              End="0,45.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="0,45.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
