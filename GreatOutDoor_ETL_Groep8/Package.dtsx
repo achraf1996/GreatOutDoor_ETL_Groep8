@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="69"
-  DTS:VersionGUID="{037285E4-964D-421B-8A3F-389AA7444BA5}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{60745C5D-0511-435D-9893-15964B0BD626}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -68,6 +68,15 @@
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{26856185-C3D6-4288-BBF2-703CE92177CB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Day">
+      <DTS:VariableValue
+        DTS:DataType="3">1</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{EA98A008-5DDA-460C-8CBC-BCBA4046E112}"
@@ -3268,59 +3277,59 @@ join COUNTRY ct on rtsite.COUNTRY_CODE = ct.COUNTRY_CODE</property>
               startId="Package\Data Flow Task - Fact Total Sales\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output9]"
-              endId="Package\Data Flow Task - Fact Total Sales\Data Conversion 1.Inputs[Data Conversion Input]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup Location.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c.Outputs[Lookup Match Output]" />
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Calander.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output8]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output7]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Product AenC.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output6]"
-              endId="Package\Data Flow Task - Fact Total Sales\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Location.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output4]"
-              endId="Package\Data Flow Task - Fact Total Sales\Data Conversion.Inputs[Data Conversion Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output3]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output2]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Order Method.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output1]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup Order Method.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task - Fact Total Sales\Lookup Product.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output5]"
-              endId="Package\Data Flow Task - Fact Total Sales\Lookup Location.Inputs[Lookup Input]"
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output7]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup Order Method.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task - Fact Total Sales\Lookup Calander.Outputs[Lookup Match Output]" />
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output6]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Order Method.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output5]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output3]"
+              endId="Package\Data Flow Task - Fact Total Sales\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Location.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output10]"
               endId="Package\Data Flow Task - Fact Total Sales\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task - Fact Total Sales\Lookup Calander AenC.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output2]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Product AenC.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output1]"
+              endId="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Task - Fact Total Sales\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output4]"
+              endId="Package\Data Flow Task - Fact Total Sales\Data Conversion.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - Fact Total Sales.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task - Fact Total Sales\Derived Column.Inputs[Derived Column Input]"
@@ -3362,6 +3371,16 @@ join COUNTRY ct on rtsite.COUNTRY_CODE = ct.COUNTRY_CODE</property>
                       cachedDataType="i2"
                       cachedName="PR_NUMBER"
                       lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Derived Column.Inputs[Derived Column Input].Columns[DATE_START]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DATE_START"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_START]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Derived Column.Inputs[Derived Column Input].Columns[DATE_END]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DATE_END"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_END]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3419,6 +3438,50 @@ join COUNTRY ct on rtsite.COUNTRY_CODE = ct.COUNTRY_CODE</property>
                           name="FriendlyExpression">(DT_I4)PR_NUMBER</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateStart]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateStart]"
+                      name="dateStart"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBDATE)#{Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_START]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBDATE)DATE_START</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateEnd]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateEnd]"
+                      name="dateEnd"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBDATE)#{Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_END]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBDATE)DATE_END</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3440,6 +3503,322 @@ join COUNTRY ct on rtsite.COUNTRY_CODE = ct.COUNTRY_CODE</property>
                       refId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task - Fact_Campaign\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_CALENDAR]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_CALENDAR]) [refTable]
+where [refTable].[date] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="datekey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="yearmonth" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateEnd]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  connectionManagerRefId="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input].Columns[dateEnd]"
+                      cachedDataType="dbDate"
+                      cachedName="dateEnd"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateEnd]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">date</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Match Output].Columns[datekeyEndDate]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Match Output].Columns[datekeyEndDate]"
+                      name="datekeyEndDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">datekey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Date key"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_CALENDAR]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_CALENDAR]) [refTable]
+where [refTable].[date] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="datekey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="yearmonth" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateStart]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  connectionManagerRefId="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input].Columns[dateStart]"
+                      cachedDataType="dbDate"
+                      cachedName="dateStart"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Derived Column.Outputs[Derived Column Output].Columns[dateStart]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">date</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Match Output].Columns[datekeyStartDate]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Match Output].Columns[datekeyStartDate]"
+                      name="datekeyStartDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">datekey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3867,18 +4246,6 @@ where [refTable].[original_id] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAMPAIGN_discount]"
                       lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DISCOUNT]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATE_START]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="DATE_START"
-                      externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTION_date_start]"
-                      lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_START]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATE_END]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="DATE_END"
-                      externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTION_date_end]"
-                      lineageId="Package\Data Flow Task - Fact_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE_END]" />
-                    <inputColumn
                       refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OrginalSource]"
                       cachedDataType="wstr"
                       cachedLength="13"
@@ -3897,6 +4264,18 @@ where [refTable].[original_id] = ?</property>
                       cachedName="idProduct"
                       externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_id]"
                       lineageId="Package\Data Flow Task - Fact_Campaign\Lookup Product.Outputs[Lookup Match Output].Columns[idProduct]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[datekeyStartDate]"
+                      cachedDataType="i4"
+                      cachedName="datekeyStartDate"
+                      externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_ID_date_start]"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Match Output].Columns[datekeyStartDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[datekeyEndDate]"
+                      cachedDataType="i4"
+                      cachedName="datekeyEndDate"
+                      externalMetadataColumnId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_ID_date_end]"
+                      lineageId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Match Output].Columns[datekeyEndDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3915,16 +4294,8 @@ where [refTable].[original_id] = ?</property>
                       name="CAMPAIGN_ORGINAL_source" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAMPAIGN_discount]"
-                      dataType="i4"
+                      dataType="r4"
                       name="CAMPAIGN_discount" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTION_date_start]"
-                      dataType="dbDate"
-                      name="PROMOTION_date_start" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTION_date_end]"
-                      dataType="dbDate"
-                      name="PROMOTION_date_end" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_id]"
                       dataType="i4"
@@ -3933,6 +4304,14 @@ where [refTable].[original_id] = ?</property>
                       refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTION_id]"
                       dataType="i4"
                       name="PROMOTION_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_ID_date_start]"
+                      dataType="i4"
+                      name="CALENDER_ID_date_start" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_ID_date_end]"
+                      dataType="i4"
+                      name="CALENDER_ID_date_end" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4175,9 +4554,19 @@ join Promotion pr on cn.PR_NUMBER = pr.PR_NUMBER</property>
               startId="Package\Data Flow Task - Fact_Campaign\Lookup Product.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output1]"
-              endId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task - Fact_Campaign\Lookup Promotion.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output2]"
+              endId="Package\Data Flow Task - Fact_Campaign\Lookup.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact_Campaign\Lookup Date key.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output3]"
+              endId="Package\Data Flow Task - Fact_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - Fact_Campaign\Lookup.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - Fact_Campaign.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task - Fact_Campaign\Derived Column.Inputs[Derived Column Input]"
@@ -8662,6 +9051,269 @@ or employee.emp_id = 299 or employee.emp_id = 148</property>
           version="1">
           <components>
             <component
+              refId="Package\Data Flow Task - SALES_TARGET\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task - SALES_TARGET\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output].Columns[DayColumn]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output].Columns[DayColumn]"
+                      name="DayColumn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::Day]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::Day]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task - SALES_TARGET\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task - SALES_TARGET\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_CALENDAR]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_CALENDAR]) [refTable]
+where [refTable].[year] = ? and [refTable].[month] = ? and [refTable].[day] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="datekey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="yearmonth" dataType="DT_WSTR" length="6" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_YEAR]};#{Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_PERIOD]};#{Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output].Columns[DayColumn]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - SALES_TARGET\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  connectionManagerRefId="Package.ConnectionManagers[C6963617.GreatOutdoor]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input].Columns[DayColumn]"
+                      cachedDataType="i4"
+                      cachedName="DayColumn"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output].Columns[DayColumn]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">day</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input].Columns[SALES_PERIOD]"
+                      cachedDataType="i4"
+                      cachedName="SALES_PERIOD"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_PERIOD]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">month</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input].Columns[SALES_YEAR]"
+                      cachedDataType="i4"
+                      cachedName="SALES_YEAR"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_YEAR]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">year</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Match Output].Columns[datekey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Match Output].Columns[datekey]"
+                      name="datekey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">datekey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task - SALES_TARGET\Lookup Product"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
@@ -9208,18 +9860,6 @@ where [refTable].[orginalId] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_TARGET_target]"
                       lineageId="Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_TARGET]" />
                     <inputColumn
-                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SALES_PERIOD]"
-                      cachedDataType="i4"
-                      cachedName="SALES_PERIOD"
-                      externalMetadataColumnId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_TARGET_period]"
-                      lineageId="Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_PERIOD]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SALES_YEAR]"
-                      cachedDataType="i4"
-                      cachedName="SALES_YEAR"
-                      externalMetadataColumnId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_TARGET_year]"
-                      lineageId="Package\Data Flow Task - SALES_TARGET\OLE DB Source.Outputs[OLE DB Source Output].Columns[SALES_YEAR]" />
-                    <inputColumn
                       refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCT_NUMBER]"
                       cachedDataType="i4"
                       cachedName="PRODUCT_NUMBER"
@@ -9237,6 +9877,12 @@ where [refTable].[orginalId] = ?</property>
                       cachedName="idRetailer"
                       externalMetadataColumnId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RETAILER_id]"
                       lineageId="Package\Data Flow Task - SALES_TARGET\Lookup Retailer.Outputs[Lookup Match Output].Columns[idRetailer]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[datekey]"
+                      cachedDataType="i4"
+                      cachedName="datekey"
+                      externalMetadataColumnId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_id]"
+                      lineageId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Match Output].Columns[datekey]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -9249,14 +9895,6 @@ where [refTable].[orginalId] = ?</property>
                       dataType="i4"
                       name="SALES_TARGET_target" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_TARGET_period]"
-                      dataType="i4"
-                      name="SALES_TARGET_period" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_TARGET_year]"
-                      dataType="i4"
-                      name="SALES_TARGET_year" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALES_STAFF_id]"
                       dataType="i4"
                       name="SALES_STAFF_id" />
@@ -9268,6 +9906,10 @@ where [refTable].[orginalId] = ?</property>
                       refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_id]"
                       dataType="i4"
                       name="PRODUCT_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CALENDER_id]"
+                      dataType="i4"
+                      name="CALENDER_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -9516,6 +10158,11 @@ where [refTable].[orginalId] = ?</property>
           </components>
           <paths>
             <path
+              refId="Package\Data Flow Task - SALES_TARGET.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task - SALES_TARGET\Lookup.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task - SALES_TARGET\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task - SALES_TARGET\Lookup Retailer.Inputs[Lookup Input]"
               name="Lookup Match Output"
@@ -9527,9 +10174,14 @@ where [refTable].[orginalId] = ?</property>
               startId="Package\Data Flow Task - SALES_TARGET\Lookup Retailer.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output2]"
-              endId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task - SALES_TARGET\Derived Column.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task - SALES_TARGET\Lookup Sales Staff.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output3]"
+              endId="Package\Data Flow Task - SALES_TARGET\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task - SALES_TARGET\Lookup.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task - SALES_TARGET.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task - SALES_TARGET\Lookup Product.Inputs[Lookup Input]"
@@ -9605,23 +10257,6 @@ where [refTable].[orginalId] = ?</property>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{32CCBECD-7FD4-4E76-8AD8-5E45CBADC503}"
           SQLTask:SqlStatementSource="update fct&#xA;SET TOTAL_SALES_total_by_order_detail = fct.TOTAL_SALES_ORDER_DETAIL_quantity * fct.TOTAL_SALES_ORDER_DETAIL_unit_sale_price&#xA;from   GreatOutdoor.dbo.FACT_TOTAL_SALES fct " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Fill in total by product_Type"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{50DD48E3-8B63-4F41-A29F-10C3ABD543B6}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Fill in total by product_Type"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{32CCBECD-7FD4-4E76-8AD8-5E45CBADC503}"
-          SQLTask:SqlStatementSource="update fct&#xA;SET TOTAL_SALES_total_by_product_type = totalProductType&#xA;from   GreatOutdoor.dbo.FACT_TOTAL_SALES fct join &#xA;(&#xA; select hdr.ORDER_NUMBER,  pttype.PRODUCT_TYPE_EN, sum(ord.QUANTITY * ord.UNIT_SALE_PRICE) totalProductType  from GreatOutdoor2.dbo.ORDER_HEADER hdr join GreatOutdoor2.dbo.ORDER_DETAILS ord on ord.ORDER_NUMBER = hdr.ORDER_NUMBER&#xA;join GreatOutdoor2.dbo.PRODUCT prd on ord.PRODUCT_NUMBER = prd.PRODUCT_NUMBER&#xA;join GreatOutdoor2.dbo.PRODUCT_TYPE pttype on prd.PRODUCT_TYPE_CODE = pttype.PRODUCT_TYPE_CODE&#xA;group by hdr.ORDER_NUMBER, pttype.PRODUCT_TYPE_EN&#xA;) totalbyProducttype on fct.TOTAL_SALES_original_id = totalbyProducttype.ORDER_NUMBER&#xA;join GreatOutdoor.dbo.DIM_PRODUCT prd on fct.PRODUCT_id = prd.id&#xA;where prd.producttypeName = totalbyProducttype.PRODUCT_TYPE_EN&#xA;&#xA;&#xA;update fct&#xA;set TOTAL_SALES_total_by_product_type = totalbyprtype&#xA;from FACT_TOTAL_SALES fct join  (select TOTAL_SALES_ORGINAL_ORDERDETAIL_id, sum(TOTAL_SALES_ORDER_DETAIL_quantity * TOTAL_SALES_ORDER_DETAIL_unit_sale_price ) as totalbyprtype,&#xA;prd.producttypeName&#xA;from FACT_TOTAL_SALES &#xA;join DIM_PRODUCT prd on FACT_TOTAL_SALES.PRODUCT_id = prd.id&#xA;where TOTAL_SALES_origina_source = 'AenC'&#xA;group by TOTAL_SALES_ORGINAL_ORDERDETAIL_id, prd.producttypeName) tp on fct.TOTAL_SALES_ORGINAL_ORDERDETAIL_id = tp.TOTAL_SALES_ORGINAL_ORDERDETAIL_id&#xA;join DIM_PRODUCT prd on fct.PRODUCT_id = prd.id&#xA;where TOTAL_SALES_origina_source = 'AenC'&#xA;and prd.producttypeName = tp.producttypeName&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -9892,14 +10527,6 @@ where [refTable].[orginalId] = ?</property>
       DTS:ObjectName="Constraint 20"
       DTS:To="Package\Fill in total by Order Detail" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 21]"
-      DTS:CreationName=""
-      DTS:DTSID="{1A0BD579-57E4-4709-A4BB-2C7258A32292}"
-      DTS:From="Package\Fill in total by Order Detail"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 21"
-      DTS:To="Package\Fill in total by product_Type" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 23]"
       DTS:CreationName=""
       DTS:DTSID="{9493EDD9-57FE-4C91-AA57-2037DB52BB74}"
@@ -9977,7 +10604,7 @@ where [refTable].[orginalId] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="240,42.6666666666667"
+          Size="240,43"
           Id="Package\Data Flow Task - Fact Total Sales"
           TopLeft="139.424603282519,1588.05346654293" />
         <NodeLayout
@@ -9989,31 +10616,31 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Location"
           TopLeft="151.111111111111,1326.66666666667" />
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
+          Size="177,43"
           Id="Package\Data Flow Task - Order Method"
           TopLeft="145.694443647646,513.742697699762" />
         <NodeLayout
-          Size="200,42.6666666666667"
+          Size="200,43"
           Id="Package\Data Flow Task - Product"
           TopLeft="141.434294138478,348.597839504753" />
         <NodeLayout
-          Size="154.666666666667,45.3333333333334"
+          Size="155,45"
           Id="Package\Data Flow Task - Promotion"
           TopLeft="143.333333333333,1021.11111111111" />
         <NodeLayout
-          Size="202.666666666667,42"
+          Size="203,42"
           Id="Package\Data Flow Task - Retailer"
           TopLeft="148.222222222222,856.777777777778" />
         <NodeLayout
-          Size="233.333333333334,42.6666666666667"
+          Size="233,43"
           Id="Package\Data Flow Task - SALES Branch"
           TopLeft="145.376067584014,199.33567423797" />
         <NodeLayout
-          Size="214.666666666667,42.6666666666667"
+          Size="215,43"
           Id="Package\Data Flow Task - Sales Staff"
           TopLeft="140.833332608971,684.035098565913" />
         <NodeLayout
-          Size="250.666666666667,42"
+          Size="251,42"
           Id="Package\Data Flow Task - SALES_TARGET"
           TopLeft="137.777777777778,1412.22222222222" />
         <NodeLayout
@@ -10021,7 +10648,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Delete all data from Fact Tables"
           TopLeft="145.555555555556,51.1111111111111" />
         <NodeLayout
-          Size="181.333333333334,42"
+          Size="181,42"
           Id="Package\Fill Calander with stp"
           TopLeft="144.444444444444,1177.77777777778" />
         <NodeLayout
@@ -10029,13 +10656,9 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Fill in the total by quantitty"
           TopLeft="156.230158786334,1867.66082088032" />
         <NodeLayout
-          Size="205.333333333334,42"
+          Size="205,42"
           Id="Package\Fill in total by Order Detail"
           TopLeft="153.313492130015,1961.34503139232" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Fill in total by product_Type"
-          TopLeft="177.757936574459,2064.67836472566" />
         <NodeLayout
           Size="170,42"
           Id="Package\Truncate Calander"
@@ -10045,11 +10668,11 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Truncate Location"
           TopLeft="150,1253.33333333333" />
         <NodeLayout
-          Size="186.666666666667,42.6666666666667"
+          Size="187,43"
           Id="Package\Truncate ORDER_METHOD"
           TopLeft="144.99999921355,433.157900861316" />
         <NodeLayout
-          Size="161.333333333334,42.6666666666667"
+          Size="161,43"
           Id="Package\Truncate Product"
           TopLeft="151.356836725663,279.883044175127" />
         <NodeLayout
@@ -10061,13 +10684,17 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Truncate Retailer"
           TopLeft="149.222222222222,781.777777777778" />
         <NodeLayout
-          Size="176,42.6666666666667"
+          Size="176,43"
           Id="Package\Truncate Sales Staff"
           TopLeft="142.916665911261,600.409365997714" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="168,43"
           Id="Package\Truncate Sales_Branch"
           TopLeft="146.225693687745,124.45029254626" />
+        <NodeLayout
+          Size="168,67"
+          Id="Package\Update Null values with Fact tables"
+          TopLeft="170.138886353622,1705.80722991462" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="230.225693687745,167.45029254626">
@@ -10327,6 +10954,50 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 17]"
+          TopLeft="261.32341275237,1528.66666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.3867998762644"
+              Start="0,0"
+              End="0,51.8867998762644">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.8867998762644" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 18]"
+          TopLeft="256.78174481807,1630.7201332096">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.0870967050168"
+              Start="0,0"
+              End="0,67.5870967050168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5870967050168" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 19]"
           TopLeft="230.39062462165,93.1111111111111">
           <EdgeLayout.Curve>
@@ -10405,19 +11076,19 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 21]"
-          TopLeft="259.285714352237,2003.34503139232">
+          Id="Package.PrecedenceConstraints[Constraint 23]"
+          TopLeft="256.684522569978,1773.14056324795">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.3333333333335"
+              EndConnector="0,94.5202576323718"
               Start="0,0"
-              End="0,53.8333333333335">
+              End="0,87.0202576323718">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.8333333333335" />
+                    End="0,87.0202576323718" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10628,76 +11299,6 @@ where [refTable].[orginalId] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,67.3333333333334"
-          Id="Package\Update Null values with Fact tables"
-          TopLeft="170.138886353622,1705.80722991462" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 18]"
-          TopLeft="256.78174481807,1630.7201332096">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75.0870967050168"
-              Start="0,0"
-              End="0,67.5870967050168">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.5870967050168" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="256.684522569978,1773.14056324795">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,94.5202576323718"
-              Start="0,0"
-              End="0,87.0202576323718">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,87.0202576323718" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 17]"
-          TopLeft="261.32341275237,1528.66666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.3867998762644"
-              Start="0,0"
-              End="0,51.8867998762644">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.8867998762644" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10751,7 +11352,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf"
           TopLeft="298,556" />
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output5]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output9]"
           TopLeft="391.276041672487,784">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10799,7 +11400,7 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output3]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output5]"
           TopLeft="398.5,519">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10835,7 +11436,7 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output2]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output6]"
           TopLeft="394.75,445">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10859,7 +11460,7 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output1]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output7]"
           TopLeft="388,355">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10883,7 +11484,7 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output8]"
           TopLeft="376,270.760233932438">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10997,7 +11598,7 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output6]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output3]"
           TopLeft="388.218750011642,851.184210172155">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11105,7 +11706,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC"
           TopLeft="549.107134674809,319.248126040913" />
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output7]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output2]"
           TopLeft="638.874991850928,278.832084376836">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11133,7 +11734,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c"
           TopLeft="552.678563193019,403.408526601868" />
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output8]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output1]"
           TopLeft="641.107134674809,361.91479270758">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11173,7 +11774,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact Total Sales\Data Conversion 1"
           TopLeft="566.666658364591,532.957397402473" />
         <EdgeLayout
-          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output9]"
+          Id="Package\Data Flow Task - Fact Total Sales.Paths[Lookup Match Output]"
           TopLeft="650.339277445472,446.075193268535">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11254,12 +11855,12 @@ where [refTable].[orginalId] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Retailer">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11269,7 +11870,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11277,17 +11878,17 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Location">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_LOCATION]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -11305,7 +11906,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11315,7 +11916,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11323,22 +11924,22 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Calander AenC">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string"></Value>
+          type="q3:string">[dbo].[DIM_CALENDAR]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11359,8 +11960,128 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\OLE DB Source">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Product AenC">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Location">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_LOCATION]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Retailer">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Order Method">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_ORDER_METHOD]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -11390,17 +12111,17 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Order Method">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Sales Branch">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DIM_ORDER_METHOD]</Value>
+          type="q3:string"></Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
@@ -11413,23 +12134,16 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Sales Staf">
+    design-time-name="Package\Data Flow Task - Fact Total Sales\OLE DB Source">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact Total Sales\ADO NET Source">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -11449,7 +12163,7 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact_Campaign\Lookup Promotion"
           TopLeft="408,383" />
         <NodeLayout
-          Size="157.333333333334,42"
+          Size="157,42"
           Id="Package\Data Flow Task - Fact_Campaign\OLE DB Source"
           TopLeft="384,137" />
         <NodeLayout
@@ -11457,9 +12171,9 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - Fact_Campaign\Derived Column"
           TopLeft="395,240" />
         <NodeLayout
-          Size="177.333333333334,42"
+          Size="177,42"
           Id="Package\Data Flow Task - Fact_Campaign\OLE DB Destination"
-          TopLeft="392,484" />
+          TopLeft="390,613" />
         <EdgeLayout
           Id="Package\Data Flow Task - Fact_Campaign.Paths[OLE DB Source Output]"
           TopLeft="462.5,179">
@@ -11492,42 +12206,6 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output1]"
-          TopLeft="492,425">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.3333333333333,59"
-              Start="0,0"
-              End="-11.3333333333333,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.5"
-                    Point2="0,29.5"
-                    Point3="-4,29.5" />
-                  <mssgle:LineSegment
-                    End="-7.33333333333326,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.33333333333326,29.5"
-                    Point2="-11.3333333333333,29.5"
-                    Point3="-11.3333333333333,33.5" />
-                  <mssgle:LineSegment
-                    End="-11.3333333333333,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-53.8580533854166,34.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11588,6 +12266,98 @@ where [refTable].[orginalId] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Data Flow Task - Fact_Campaign\Lookup Date key"
+          TopLeft="408,462" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output1]"
+          TopLeft="490.25,425">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,8.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Data Flow Task - Fact_Campaign\Lookup"
+          TopLeft="423,530" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output2]"
+          TopLeft="488.5,504">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8,26"
+              Start="0,0"
+              End="-8,18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9"
+                    Point2="0,13"
+                    Point3="-4,13" />
+                  <mssgle:LineSegment
+                    End="-4,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4,13"
+                    Point2="-8,13"
+                    Point3="-8,17" />
+                  <mssgle:LineSegment
+                    End="-8,18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-52.19138671875,18,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task - Fact_Campaign.Paths[Lookup Match Output3]"
+          TopLeft="479.5,572">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -11618,7 +12388,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11628,7 +12398,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11641,7 +12411,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12543,7 +13313,7 @@ where [refTable].[orginalId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="170.666666666667,42"
+          Size="171,42"
           Id="Package\Data Flow Task - SALES_TARGET\Lookup Sales Staff"
           TopLeft="282,507" />
         <NodeLayout
@@ -12551,11 +13321,11 @@ where [refTable].[orginalId] = ?</property>
           Id="Package\Data Flow Task - SALES_TARGET\Lookup Retailer"
           TopLeft="298,397" />
         <NodeLayout
-          Size="177.333333333334,42"
+          Size="177,42"
           Id="Package\Data Flow Task - SALES_TARGET\OLE DB Destination"
-          TopLeft="285,604" />
+          TopLeft="295,799" />
         <NodeLayout
-          Size="157.333333333334,42"
+          Size="157,42"
           Id="Package\Data Flow Task - SALES_TARGET\OLE DB Source"
           TopLeft="264,194" />
         <NodeLayout
@@ -12594,30 +13364,6 @@ where [refTable].[orginalId] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output2]"
-          TopLeft="370.5,549">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,17.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12680,6 +13426,108 @@ where [refTable].[orginalId] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Data Flow Task - SALES_TARGET\Derived Column"
+          TopLeft="292,614" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output2]"
+          TopLeft="369.25,549">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,22.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Data Flow Task - SALES_TARGET\Lookup"
+          TopLeft="295,694" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - SALES_TARGET.Paths[Derived Column Output]"
+          TopLeft="371,656">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5,38"
+              Start="0,0"
+              End="-18.5,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15"
+                    Point2="0,19"
+                    Point3="-4,19" />
+                  <mssgle:LineSegment
+                    End="-14.5,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5,19"
+                    Point2="-18.5,19"
+                    Point3="-18.5,23" />
+                  <mssgle:LineSegment
+                    End="-18.5,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task - SALES_TARGET.Paths[Lookup Match Output3]"
+          TopLeft="352.5,736">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="31,63"
+              Start="0,0"
+              End="31,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="27,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27,31.5"
+                    Point2="31,31.5"
+                    Point3="31,35.5" />
+                  <mssgle:LineSegment
+                    End="31,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-32.69138671875,36.5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -12702,7 +13550,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12712,7 +13560,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12725,7 +13573,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12735,7 +13583,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12748,7 +13596,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12758,7 +13606,7 @@ where [refTable].[orginalId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12779,84 +13627,7 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\ADO NET Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Product AenC">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Retailer AenC">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup sales staff aen c">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\Lookup Calander AenC">
+    design-time-name="Package\Data Flow Task - SALES_TARGET\Lookup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -12879,15 +13650,48 @@ where [refTable].[orginalId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task - Fact Total Sales\OLE DB Destination 1">
+    design-time-name="Package\Data Flow Task - Fact_Campaign\Lookup Date key">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_CALENDAR]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task - Fact_Campaign\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_CALENDAR]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
